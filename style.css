@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: Arial, sans-serif;
 }
 
@@ -18,105 +22,56 @@ body {
 }
 
 .main-menu {
-    background-color: #333;
+    background-color: darkgray;
     height: 60px;
     display: flex;
-    justify-content: center; 
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu-kiri {
+    display: flex;
+    align-items: center;
+}
+
+.menu-kanan {
+    display: flex;
     align-items: center;
 }
 
 .menu1, .menu2 {
-    display: flex;
+    color: #666;
+    padding: 14px 16px;
+    margin-right: 10px;
+    background-color: transparent;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline; 
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 0 10px; 
+.menu1:hover, .menu2:hover {
+    background-color: transparent;
+    color: #333;
 }
 
 .content {
     background-color: #f3f3f3;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .kiri {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #fff; 
-    padding: 20px; 
-}
-
-.kiri h2 {
-    font-size: 48px;
-    color: orange;
-    margin-bottom: 10px;
-}
-
-.kiri ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.kiri li {
-    margin-bottom: 10px;
-}
-
-.kiri a {
-    color: #333;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.kiri a:hover {
-    text-decoration: underline;
-}
-
-.kiri p {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.kiri img {
-    width: 100%;
-    height: auto;
+    width: 75%;
+    padding-right: 20px;
 }
 
 .kanan {
-    width: 30%;
-    background-color: #fff;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.kotak {
+    background-color: white;
     padding: 20px;
-}
-
-.kanan h2 {
-    font-size: 48px;
-    color: orange;
-    margin-bottom: 10px;
-}
-
-.kanan p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.5;
+    margin-top: 20px; 
 }
 
 .footer {
@@ -125,4 +80,5 @@ nav ul li a {
     text-align: center;
     color: white;
     font-size: 18px;
+    margin-top: 20px;
 }
