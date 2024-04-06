@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: orange;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+    font-size: 48px;
+}
+
+.main-menu {
+    background-color: darkgray;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu-kiri {
+    display: flex;
+    align-items: center;
+}
+
+.menu-kanan {
+    display: flex;
+    align-items: center;
+}
+
+.menu1, .menu2 {
+    color: #666;
+    padding: 14px 16px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.menu1:hover, .menu2:hover {
+    background-color: transparent;
+    color: #333;
+}
+
+.content {
+    background-color: #f3f3f3;
+    padding: 20px;
+    display: flex;
+}
+
+.kiri {
+    width: 75%;
+    padding-right: 20px;
+}
+
+.kanan {
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.kotak {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.footer {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
