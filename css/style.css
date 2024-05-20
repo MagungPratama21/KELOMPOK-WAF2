@@ -1,84 +1,119 @@
+/*1 rem = 1x16 px */
+
+.warna {
+  --primary: #00ffff;
+  --background-color: #010101;
+  --gray: #808080;
+}
+
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
-    margin: 0;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: whitesmoke;
 }
 
-.header {
-    background-color: orange;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid rgb(4, 141, 141);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-.header h1 {
-    color: white;
-    font-size: 48px;
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
 }
 
-.main-menu {
-    background-color: darkgray;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+.navbar .navbar-logo span {
+  color: var(--primary);
+  transition: color 0.4s;
 }
 
-.menu-kiri {
-    display: flex;
-    align-items: center;
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: #fff;
 }
 
-.menu-kanan {
-    display: flex;
-    align-items: center;
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
 }
 
-.menu1, .menu2 {
-    color: #666;
-    padding: 14px 16px;
-    margin-right: 10px;
-    background-color: transparent;
+.navbar .navbar-tambahan a {
+  color: #fff;
+  margin: 0 0.5rem;
 }
 
-.menu1:hover, .menu2:hover {
-    background-color: transparent;
-    color: #333;
+.navbar .navbar-tambahan a:hover {
+  color: var(--primary);
 }
 
-.content {
-    background-color: #f3f3f3;
-    padding: 20px;
-    display: flex;
+#menu {
+  display: none;
 }
 
-.kiri {
-    width: 75%;
-    padding-right: 20px;
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
 }
 
-.kanan {
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-}
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
 
-.kotak {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px; 
-}
+  #menu {
+    display: inline-block;
+  }
 
-.footer {
-    background-color: orange;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    margin-top: 20px;
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: right 0.4s, background-color 0.4s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+    background-color: var(--gray);
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--background-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
 }
