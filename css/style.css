@@ -16,23 +16,22 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--background-color);
-  color: whitesmoke;
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
 }
 
-.navbar {
+.header {
+  background-color: orange;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid rgb(4, 141, 141);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
+}
+
+.header h1 {
+  color: white;
+  font-size: 48px;
 }
 
 .navbar .navbar-logo {
