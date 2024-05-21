@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+section {
+  padding: 4rem 0 2rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: #fff;
+  --primary: rgb(225, 155, 4);
+  --background-color: #000000;
+  --gray: #808080;
+  --border-color: #a0522d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+  transition: color 0.4s;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-tambahan a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-tambahan a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+.search-box {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  box-shadow: 4px 4px 20px rgba(126, 126, 126, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  clip-path: circle(0% at 100% 0%);
+  transition: clip-path 0.5s;
+}
+
+.search-box.active {
+  clip-path: circle(144% at 100% 0%);
+}
+
+.search-box input {
+  width: 100px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.mobil {
+  max-width: 1950px;
+  margin: auto;
+  width: 100%;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  padding: auto;
+  background: url("../foto/backgroundjual.jpg") no-repeat center left;
+  background-size: cover;
+}
+
+.home-text {
+  padding-left: 130px;
+  color: #000;
+}
+
+.home-text h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.home-text span {
+  color: var(--primary);
+}
+
+.home-text p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.2rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 22px;
+  background: var(--primary);
+  border: none;
+  color: var(--background-color);
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-mobil {
+  text-align: center;
+}
+
+.header-mobil span {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.header-mobil p {
+  font-size: 0, 9rem;
+  font-weight: 300;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.content .box {
+  flex: 1 1 17rem;
+  position: relative;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.content .box img:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.content .box h2 {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 1.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--background-color);
+  padding: 8px;
+  border-radius: 0.5;
+}
+
+.content .box:hover h2 {
+  background: rgb(186, 8, 8);
+  color: white;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--gray);
+    width: 30rem;
+    height: 100vh;
+    transition: right 0.4s;
+    background-color: 0.4s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+    background-color: whitesmoke;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
