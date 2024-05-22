@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section {
   padding: 4rem 0 2rem;
 }
@@ -107,7 +111,7 @@ body {
   display: flex;
   align-items: center;
   padding: auto;
-  background: url('../foto/bmwi8.png') no-repeat center left;
+  background: url('../foto2/bmwi8.png') no-repeat center left;
   background-size: cover;
 }
 
@@ -212,6 +216,40 @@ body {
   color: white;
 
 }
+
+.footer{
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.footer .media {
+  padding: 1rem 0 3rem;
+}
+
+.footer .media a{
+  color: #fff;
+  margin: 1rem;
+}
+
+.footer .media a:hover{
+  color: var(--background-color);
+}
+
+.footer .link {
+  margin-bottom: 1.4rem;;
+}
+
+.footer .link a{
+  color: #fff;
+  padding: 0.6rem 1rem;
+}
+
+.footer .link a:hover{
+  color: var(--background-color);
+}
+
 
 @media (max-width: 1366px) {
   html {
