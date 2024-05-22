@@ -85,7 +85,7 @@ body {
   border: 1px solid var(--primary);
   border-radius: 0.5rem;
   clip-path: circle(0% at 100% 0%);
-  transition: clip-path 0.5s; 
+  transition: clip-path 0.5s;
 }
 
 .search-box.active {
@@ -212,6 +212,100 @@ body {
   color: white;
 }
 
+.spare-part {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.spare-part .header {
+  text-align: center;
+}
+
+.spare-part .header span {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.spare-part .header p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.spare-part .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.spare-part .box {
+  flex: 1 1 250px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+  overflow: hidden;
+  height: 350px;
+}
+
+.spare-part .box:hover {
+  transform: translateY(-5px);
+}
+
+.spare-part .box img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.spare-part .box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.spare-part .box .bagi .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.spare-part .box .bagi .button {
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.spare-part .box .bagi .button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+.spare-part .box .bagi .details {
+  color: var(--primary);
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.spare-part .box .bagi .details:hover {
+  color: darkgoldenrod;
+  transform: scale(1.1);
+}
+
 #footer {
   background-color: var(--primary);
   text-align: center;
@@ -280,20 +374,27 @@ body {
     color: #000;
     display: block;
     margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    transition: 0.4s;
   }
 
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
+  .navbar .navbar-nav a:hover {
+    color: var(--primary);
   }
 
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
+  .home {
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-left: 2rem;
+  }
+
+  .home-text h1 {
+    font-size: 3.4rem;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   html {
     font-size: 55%;
   }
