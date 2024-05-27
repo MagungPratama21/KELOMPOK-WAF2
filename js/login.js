@@ -1,31 +1,25 @@
-const loginForm = document.getElementById("loginform");
+document.addEventListener("DOMContentLoaded", () => {
+   feather.replace();
 
-const handleLogin = (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+   const togglePassword = document.getElementById("togglePassword");
+   const passwordField = document.getElementById("password");
 
-    if (username === "username" && password === "password") {
-        window.location.href = 'file:///C:/xampp/xampp2/htdocs/jualbelikendaraan/index.html'; 
-    } else {
-        alert('Invalid username or password');
-    }
-};
+   const togglePasswordVisibility = () => {
+       const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+       passwordField.setAttribute("type", type);
 
-loginForm.addEventListener("submit", handleLogin);
+       if (type === "text") {
+           togglePassword.setAttribute("data-feather", "eye-off");
+       } else {
+           togglePassword.setAttribute("data-feather", "eye");
+       }
 
-const loginButton = document.getElementById("loginButton");
-loginButton.addEventListener("click", handleLogin);
+       feather.replace(); 
+   };
 
+   document.addEventListener("mouseup", () => {
+       togglePassword.removeEventListener("mousedown", togglePasswordVisibility);
+   });
 
-const togglePassword = document.getElementById("togglePassword");
-const passwordField = document.getElementById("password");
-
-togglePassword.addEventListener("click", function () {
-    const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-    passwordField.setAttribute("type", type);
-    
-    this.classList.toggle("feather-eye-off");
+   togglePassword.addEventListener("mousedown", togglePasswordVisibility);
 });
-
-feather.replace();
