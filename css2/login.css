@@ -24,6 +24,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     backdrop-filter: blur(20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kotak_login:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .kotak_login h1 {
@@ -107,6 +113,10 @@ body {
     margin-bottom: 10px;
 }
 
+.button:hover {
+    background: #f0f0f0;
+}
+
 .register {
     font-size: 14.5px;
     text-align: center;
@@ -125,5 +135,5 @@ body {
 
 .input-box i {
     position: absolute;
-    left : 0;
+    left: 15px;
 }
