@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login & Register</title>
     <link rel="stylesheet" href="css2/login.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 </head>
 <body>
     <div class="kotak_login">
-        <form id="loginform">
-            <h1>Login</h1>
-            <div class="input-box">
-                <i data-feather="user"></i>
-                <input type="text" id="username" name="username" placeholder="Username" />
-            </div>
-            <div class="input-box">
-                <i data-feather="lock"></i>
-                <input type="password" id="password" name="password" placeholder="Password" />
-                <i data-feather="eye" id="togglePassword" class="toggle-password"></i>
-            </div>
-
-            <div class="remember-forget">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forget Password</a>
-            </div>
-
-            <button type="button" id="loginButton" class="button">Login</button>
-            <div class="register">
-                <p>don't have an account ? <a href="#">Register</a></p>
-            </div>
-        </form>
+        <div id="signIn">
+            <form id="loginform" action="login.php" method="POST">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <i data-feather="user"></i>
+                    <input type="text" id="username" name="username" placeholder="Username" required />
+                </div>
+                <div class="input-box">
+                    <i data-feather="lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required />
+                    <i data-feather="eye" id="togglePassword" class="toggle-password"></i>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox" name="remember">Remember me</label>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button type="submit" id="loginButton" class="button">Login</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="#" id="signUpButton">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div id="signUp" style="display: none;">
+            <form id="registerform" action="register.php" method="POST">
+                <h1>Register</h1>
+                <div class="input-box">
+                    <i data-feather="user"></i>
+                    <input type="text" id="reg_username" name="username" placeholder="Username" required />
+                </div>
+                <div class="input-box">
+                    <i data-feather="mail"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                </div>
+                <div class="input-box">
+                    <i data-feather="lock"></i>
+                    <input type="password" id="reg_password" name="password" placeholder="Password" required />
+                    <i data-feather="eye" id="toggleRegPassword" class="toggle-password"></i>
+                </div>
+                <div class="input-box">
+                    <i data-feather="lock"></i>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required />
+                    <i data-feather="eye" id="toggleConfirmPassword" class="toggle-password"></i>
+                </div>
+                <button type="submit" id="registerButton" class="button">Register</button>
+                <div class="register">
+                    <p>Already have an account? <a href="#" id="signInButton">Login</a></p>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="js/login.js"></script>
 </body>

@@ -1,25 +1,48 @@
-document.addEventListener("DOMContentLoaded", () => {
-   feather.replace();
+document.addEventListener('DOMContentLoaded', (event) => {
+    feather.replace();
 
-   const togglePassword = document.getElementById("togglePassword");
-   const passwordField = document.getElementById("password");
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
 
-   const togglePasswordVisibility = () => {
-       const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
-       passwordField.setAttribute("type", type);
+    togglePassword.addEventListener('click', function () {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.setAttribute('data-feather', type === 'password' ? 'eye' : 'eye-off');
+        feather.replace();
+    });
 
-       if (type === "text") {
-           togglePassword.setAttribute("data-feather", "eye-off");
-       } else {
-           togglePassword.setAttribute("data-feather", "eye");
-       }
+    const toggleRegPassword = document.querySelector('#toggleRegPassword');
+    const regPassword = document.querySelector('#reg_password');
 
-       feather.replace(); 
-   };
+    toggleRegPassword.addEventListener('click', function () {
+        const type = regPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+        regPassword.setAttribute('type', type);
+        this.setAttribute('data-feather', type === 'password' ? 'eye' : 'eye-off');
+        feather.replace();
+    });
 
-   document.addEventListener("mouseup", () => {
-       togglePassword.removeEventListener("mousedown", togglePasswordVisibility);
-   });
+    const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+    const confirmPassword = document.querySelector('#confirm_password');
 
-   togglePassword.addEventListener("mousedown", togglePasswordVisibility);
+    toggleConfirmPassword.addEventListener('click', function () {
+        const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+        confirmPassword.setAttribute('type', type);
+        this.setAttribute('data-feather', type === 'password' ? 'eye' : 'eye-off');
+        feather.replace();
+    });
+
+    const signUpButton = document.getElementById('signUpButton');
+    const signInButton = document.getElementById('signInButton');
+    const signInForm = document.getElementById('signIn');
+    const signUpForm = document.getElementById('signUp');
+
+    signUpButton.addEventListener('click', function () {
+        signInForm.style.display = "none";
+        signUpForm.style.display = "block";
+    });
+
+    signInButton.addEventListener('click', function () {
+        signInForm.style.display = "block";
+        signUpForm.style.display = "none";
+    });
 });

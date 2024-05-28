@@ -71,6 +71,22 @@ body {
   color: var(--primary);
 }
 
+.navbar .navbar-tambahan a#login {
+  display: inline-block;
+}
+
+.navbar .navbar-tambahan a#user {
+  display: none;
+}
+
+.navbar .navbar-tambahan a#user.logged-in {
+  display: inline-block;
+}
+
+.navbar .navbar-tambahan a#login.logged-in {
+  display: none;
+}
+
 #menu {
   display: none;
 }
