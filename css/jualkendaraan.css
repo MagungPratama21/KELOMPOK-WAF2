@@ -151,6 +151,10 @@ body {
 
 .header-mobil {
   text-align: center;
+  padding: auto;
+  background: url("../foto/backgroundjual.jpg") no-repeat center left;
+  background-size: cover;
+  position: relative;
 }
 
 .header-mobil span {

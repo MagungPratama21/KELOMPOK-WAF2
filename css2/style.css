@@ -126,7 +126,7 @@ body {
   display: flex;
   align-items: center;
   padding: auto;
-  background: url('../foto2/bmwi8.png') no-repeat center left;
+  background: url("../foto2/bmwi8.png") no-repeat center left;
   background-size: cover;
 }
 
@@ -168,7 +168,8 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-mobil {
@@ -289,7 +290,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.spare-part .box .bagi .button {
+.spare-part .box .bagi {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -299,7 +300,7 @@ body {
 .spare-part .box .bagi .button {
   background-color: red;
   color: #fff;
-  padding: 5px;
+  padding: 10px 20px;
   font-size: 0.9rem;
   transition: 0.3s;
 }
