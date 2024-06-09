@@ -11,7 +11,6 @@ section {
   padding: 4rem 0 2rem;
 }
 
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
@@ -99,7 +98,27 @@ body {
   color: #000000;
 }
 
-.container {
+.home {
+  max-width: 1950px;
+  margin: auto;
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.carousel-container {
   max-width: 1950px;
   margin: auto;
   width: 100%;
@@ -107,29 +126,195 @@ body {
   display: flex;
   align-items: center;
   padding: auto;
-  background: url('../foto/backgroundbeli.jpg') no-repeat center left;
+  background-color:#000;
   background-size: cover;
   position: relative;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+
 }
 
-.btn {
-padding: 10px 22px;
-background: var(--primary);
-border: none;
-color: var(--background-color);
-font-weight: 400;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 2px;
-cursor: pointer;
-font-family: "Poppins", sans-serif;
-font-weight: bold;
-transition-duration: 0.4s;
+.container {
+  max-width: 1950px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-.btn:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+.container .box {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 300px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.container .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.container .box img:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.container .box h2 {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 0.9rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background: var(--background-color);
+  padding: 6px;
+  border-radius: 0.5rem;
+}
+
+.container .box:hover h2 {
+  background: rgb(186, 8, 8);
+  color: white;
+}
+
+.carousel-btn {
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  top:19%;
+  transform: translateY(-60%);
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.content .box {
+  flex: 1 1 18rem;
+  max-width: 18rem; 
+  position: relative;
+  height: 180px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.content .box img:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.content .box h2 {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 0.9rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+  background: var(--background-color);
+  padding: 6px;
+  border-radius: 0.5;
+}
+
+.content .box:hover h2 {
+  background: rgb(186, 8, 8);
+  color: white;
+}
+
+#footer {
+  background: #808080;  
+  color: #fff;
+  padding: 3rem 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  text-align: center;  
+}
+
+#footer section, .link, .media{
+  flex: 1;
+  padding: 1rem;
+  min-width: 300px; 
+  text-align: center;  
+}
+
+#footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+#footer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+#footer .link a, .media a {
+  display: block;
+  color: #fff;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+#footer .link a:hover, .media a:hover {
+  color: var(--primary);
+}
+
+#footer .media i {
+  margin-right: 0.5rem;
+}
+
+#footer .contact {
+  font-size: 0.9rem;
+}
+
+#footer .contact strong {
+  font-size: 1.1rem;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #bbb;
+  flex-basis: 100%;
+}
+
+.credit span {
+  color: var(--primary);
+  text-decoration: none;
 }
 
 @media (max-width: 1366px) {
