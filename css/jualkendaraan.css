@@ -7,10 +7,6 @@
   text-decoration: none;
 }
 
-section {
-  padding: 4rem 0 2rem;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
@@ -19,6 +15,8 @@ body {
   --background-color: #000000;
   --gray: #808080;
   --border-color: #a0522d;
+  background: url("../foto/backgroundjual.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .navbar {
@@ -26,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid var(--border-color);
   position: fixed;
   top: 0;
@@ -95,6 +93,10 @@ body {
   color: #000000;
 }
 
+section {
+  padding: 4rem 0 2rem;
+}
+
 .home {
   max-width: 1950px;
   margin: auto;
@@ -103,8 +105,6 @@ body {
   display: flex;
   align-items: center;
   padding: auto;
-  background: url("../foto/backgroundjual.jpg") no-repeat center left;
-  background-size: cover;
 }
 
 .home-text {
@@ -152,9 +152,6 @@ body {
 .header-mobil {
   text-align: center;
   padding: auto;
-  background: url("../foto/backgroundjual.jpg") no-repeat center left;
-  background-size: cover;
-  position: relative;
 }
 
 .header-mobil span {
@@ -208,6 +205,33 @@ body {
 .content .box:hover h2 {
   background: rgb(186, 8, 8);
   color: white;
+}
+
+.tabel-section {
+  padding: 2rem 5%;
+}
+
+.tabel-container {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  background: #fff;
+  color: #000;
+}
+
+.responsive-table th {
+  background: var(--primary);
+  color: #fff;
 }
 
 @media (max-width: 1366px) {
