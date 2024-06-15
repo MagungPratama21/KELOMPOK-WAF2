@@ -21,3 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         searchBox.classList.toggle("active");
     });
+});
