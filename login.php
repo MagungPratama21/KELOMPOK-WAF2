@@ -5,10 +5,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $file_path = "register.txt";
+    $data = "register.txt";
     $found = false;
 
-    $file = fopen($file_path, "r");
+    $file = fopen($data, "r");
 
     if ($file) {
         while (($line = fgets($file)) !== false) {

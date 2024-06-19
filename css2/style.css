@@ -118,6 +118,24 @@ body {
   color: #000000;
 }
 
+.user-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.user-info a {
+  display: block;
+  margin-top: 10px;
+  color: var(--primary);
+}
+
 .home {
   max-width: 1950px;
   margin: auto;
