@@ -3,36 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobil LCGC</title>
+    <title>WAF GARAGE 21</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
-
     <!-- icon -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
-    <link rel="stylesheet" href="css/jual2.css" />
+    <link rel="stylesheet" href="css3/porschecayman.css" />
   </head>
   <body>
     <div class="navbar">
       <a href="#" class="navbar-logo">WAF21<span>GARAGE.com</span></a>
+
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#beli">Beli Kendaraan</a>
-        <a href="#jual">Jual Kendaraan</a>
+        <a href="belikendaraan.html">Baru</a>
+        <a href="jualkendaraan.html">Bekas</a>
         <a href="#bantuan">Bantuan</a>
       </div>
+
       <div class="navbar-tambahan">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="login.html" id="log-in"><i data-feather="log-in"></i></a>
-        <a href="#" id="user" style="display: none"
-          ><i data-feather="user"></i
-        ></a>
+        <a href="#" id="login"><i data-feather="log-in"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
+
       <div class="search-box" id="search-box">
         <input
           type="text"
@@ -43,51 +42,36 @@
       </div>
     </div>
 
-    <section class="spare-part" id="spare-part">
-      <div class="header">
-        <h2 class="highlight">ELECTRIC CAR</h2>
-        <p>Berikut Merupakan Mobil Terbaik Masa Kini</p>
-      </div>
-      <div class="contentsuv-container">
-        <div class="contentsuv">
-          
-          <img src="foto/CheryOmodaE5.jpg" alt="CheryOmodaE5" />
-          <h3>Chery Omoda E5</h3>
-          <h3>Rp.550.000.000</h3>
-          <div class="bagi">
-            <a href="chery.html" class="button">review</a>
-          </div>
-        </div>
-        <div class="contentsuv">
-          <img src="foto/TeslaX.jpg" alt="Tesla X" />
-          <h3>Tesla X</h3>
-          <h3>Rp.2.065.000.000</h3>
-          <div class="bagi">
-            <a href="tesla.html" class="button">review</a>
-          </div>
-        </div>
-        <div class="contentsuv">
-          <img src="foto/hyundaiionic5.jpg" alt="hyundaiionic5" />
-          <h3>Hyundai Ionic 5</h3>
-          <h3>Rp.870.000.000</h3>
-          <div class="bagi">
-            <a href="hyundai.html" class="button">review</a>
-          </div>
-        </div>
-        <div class="contentsuv">
-          <img src="foto/ToyotabZ4X.jpg" alt="Toyota BZ4X" />
-          <h3>Toyota BZ4X</h3>
-          <h3>Rp.1.190.000.000</h3>
-          <div class="bagi">
-            <a href="BZ4X.html" class="button">review</a>
-          </div>
-        </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="product-container"></div>
 
-    <!-- Footer -->
+    <div class="product">
+      <img src="foto/rush.jpg" alt="Product Image" class="product-image" />
+      <div class="product-details">
+        <h3>RUSH TRD</h3>
+        <p>
+          Toyota Rush TRD tersedia dalam pilihan mesin Bensin di Indonesia Mobil
+          Terios tersedia dalam varian 2 SUV dan 8 Crossover.
+        </p>
+        <ol>
+          <li>Mesin: Bensin, kapasitas 1496 cc</li>
+          <li>Transmisi: Manual</li>
+          <li>tahun pemakaian : 2020</li>
+          <li>Varian: 2 varian SUV dan 8 varian Crossover</li>
+          <li>kilometer : 50.000 rb</li>
+          <li>Kondisi: Baik</li>
+          <li>Pemakaian: Pribadi</li>
+          <li>Panjang: 4455 mm</li>
+          <li>Lebar: 1695 mm</li>
+          <li>Wheelbase: 2685 mm</li>
+          <li>Ground clearance: 220 mm</li>
+          <li>Kapasitas: 7 seater</li>
+          <li>Harga: Rp. 235.000.000</li>
+        </ol>
+        <p class="price">Rp.235.000.000</p>
+        <a href="BIODATA.html" class="buy-button">Buy</a>
+      </div>
+    </div>
+
     <footer id="footer">
       <section class="bantuan" id="bantuan">
         <div class="bantuan-text">
@@ -111,8 +95,8 @@
         <a href="#Mobil">Best Seller</a>
         <a href="#spare-part">Spare Part</a>
         <a href="#bantuan">Bantuan</a>
-        <a href="#beli">Baru</a>
-        <a href="#jual">Bekas</a>
+        <a href="#beli">Beli Kendaraan</a>
+        <a href="#jual">Jual Kendaraan</a>
       </div>
       <div class="media">
         <div class="media">
@@ -121,7 +105,20 @@
           <a href="#"><i data-feather="twitter"></i> Twitter</a>
           <a href="#"><i data-feather="instagram"></i> Instagram</a>
         </div>
+        <div class="kontak">
+          <p>
+            <strong>Kontak Kami:</strong><br />
+            Email: support@waf21garage.com<br />
+            Telepon: +62 8977 4894 321<br />
+            Alamat: Jl. UAD 21, Yogyakarta, Indonesia
+          </p>
+        </div>
+      </div>
+      <div class="credit">
+        <p>Created by <span>WAF 21 GARAGE</span>. | &copy; 2024.</p>
       </div>
     </footer>
+
+    <script src="js/allcar.js"></script>
   </body>
 </html>

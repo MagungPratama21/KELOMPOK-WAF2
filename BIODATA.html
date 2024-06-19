@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Pembeli Mobil</title>
+    <link rel="stylesheet" href="css/jualbio.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Biodata Pembeli Mobil</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="telepon">Nomor Telepon:</label>
+          <input type="tel" id="telepon" name="telepon" required />
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tanggal-lahir">Tanggal Lahir:</label>
+          <input type="date" id="tanggal-lahir" name="tanggal-lahir" required />
+        </div>
+        <div class="form-group">
+          <label for="jenis-kelamin">Jenis Kelamin:</label>
+          <select id="jenis-kelamin" name="jenis-kelamin" required>
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pekerjaan">Pekerjaan:</label>
+          <input type="text" id="pekerjaan" name="pekerjaan" required />
+        </div>
+        <div class="form-group">
+          <label for="pengalaman-mengemudi"
+            >Pengalaman Mengemudi (tahun):</label
+          >
+          <input
+            type="number"
+            id="pengalaman-mengemudi"
+            name="pengalaman-mengemudi"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="bank">Bank Tujuan Transfer:</label>
+          <select id="bank" name="bank" required>
+            <option value="bca">BCA</option>
+            <option value="bri">BRI</option>
+            <option value="bni">BNI</option>
+            <option value="mandiri">Mandiri</option>
+            <option value="cimb-niaga">CIMB Niaga</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
