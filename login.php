@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $file_path = "../txt/register.txt";
+    $file_path = "register.txt";
     $found = false;
 
     $file = fopen($file_path, "r");
@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($file) {
         while (($line = fgets($file)) !== false) {
 
-            $data = explode(" | ", $line);
-            $saved_username = trim(substr($data[0], strpos($data[0], ":") + 1));
-            $saved_password = trim(substr($data[2], strpos($data[2], ":") + 1));
+            list($saved_username, , $saved_password) = explode("|", $line);
+            $saved_username = trim($saved_username);
+            $saved_password = trim($saved_password);
 
             if ($username === $saved_username && $password === $saved_password) {
                 $found = true;
@@ -27,15 +27,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($found) {
         $_SESSION['username'] = $username;
-        header("Location: ../jualbelikendaraan/index.php");
+        $_SESSION['success'] = "Login successful. Welcome, $username!";
+        header("Location: index.php");
         exit();
     } else {
         $_SESSION['error'] = "Invalid username or password.";
-        header("Location: ../jualbelikendaraan/login.html");
+        header("Location: index.html"); 
         exit();
     }
 } else {
-    header("Location: ../jualbelikendaraan/login.html");
+    header("Location: login.html"); 
     exit();
 }
 ?>
