@@ -40,3 +40,17 @@
     <script src="js/login.js"></script>
 </body>
 </html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $confirmpassword = $_POST['confirmpassword'];
+
+    $data = "$username|$email|$password|$confirmpassword\n";
+    $file = fopen('register.txt', 'a+');
+    fwrite($file, $data);
+    fclose($file);
+
+}
+?>

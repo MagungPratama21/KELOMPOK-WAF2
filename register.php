@@ -1,31 +1,23 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = isset($_POST['username']) ? $_POST['username'] : '';
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
-    $password = isset($_POST['password']) ? $_POST['password'] : '';
-    $confirmpassword = isset($_POST['confirmpassword']) ? $_POST['confirmpassword'] : '';
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $confirmpassword = $_POST['confirmpassword'];
 
-    if ($password !== $confirmpassword) {
-        echo "Password dan konfirmasi password tidak cocok.";
-        exit; 
-    }
+    $data = "$username|$email|$password|$confirmpassword\n";
+    $file = fopen('register.txt', 'a+');
+    fwrite($file, $data);
+    fclose($file);
 
-    $fp = fopen("register.txt", "a+");
-    if ($fp) {
-
-        $data = "$username|$email|$password\n";
  
-        fputs($fp, $data);
+    echo "<div style='text-align: center;'>";
+    echo "  <h2>Registrasi berhasil!</h2>";
+    echo "</div>";
 
-        fclose($fp);
-        
-        echo "<head><title>REGISTER</title></head>";
-        echo "<h1>Anda Telah Mendaftar</h1>";
-        echo "<button><a href='login.html'>Kembali</a></button>";
-    } else {
-        echo "Gagal membuka file register.txt";
-    }
-} else {
-    echo "Metode tidak diizinkan.";
+    echo "<div style='display: flex; justify-content: center;'>";
+    echo "  <p><a href='login2.php' class='button'>Login</a></p>";
+    echo "</div>";
+
 }
 ?>

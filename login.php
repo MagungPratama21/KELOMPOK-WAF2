@@ -12,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($file) {
         while (($line = fgets($file)) !== false) {
-
             list($saved_username, , $saved_password) = explode("|", $line);
             $saved_username = trim($saved_username);
             $saved_password = trim($saved_password);
@@ -32,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         $_SESSION['error'] = "Invalid username or password.";
-        header("Location: index.html"); 
+        header("Location: login.html"); 
         exit();
     }
 } else {
