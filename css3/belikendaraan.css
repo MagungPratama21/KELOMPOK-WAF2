@@ -36,7 +36,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 1,8rem;
   font-weight: 700;
   color: #fff;
   font-style: italic;
@@ -49,21 +49,12 @@ body {
 
 .navbar .navbar-nav a {
   display: inline-block;
-  font-size: 1.2rem;
-  margin: 0 1rem;
+  font-size: 1rem;
+  margin: 0 0.8rem;
   color: #fff;
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--primary);
-}
-
-.navbar .navbar-tambahan a {
-  color: #fff;
-  margin: 0 0.5rem;
-}
-
-.navbar .navbar-tambahan a:hover {
   color: var(--primary);
 }
 
@@ -176,8 +167,8 @@ body {
   font-weight: 400;
   font-size: 0.9rem;
   background: var(--background-color);
+  border-radius: 0,5rem;
   padding: 6px;
-  border-radius: 0.5rem;
 }
 
 .container .box:hover h2 {

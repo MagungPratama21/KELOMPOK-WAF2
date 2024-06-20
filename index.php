@@ -35,7 +35,7 @@ include 'header.php';
         </a>
     </div>
     <div class="box">
-        <a href="ferrari.html">
+        <a href="ferarri.html">
             <img src="foto2/foto3.jpg">
             <h2>Ferrari</h2>
         </a>
