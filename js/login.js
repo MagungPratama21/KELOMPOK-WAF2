@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
-    const confirmPassword = document.querySelector('#confirm_password');
+    const confirmPassword = document.querySelector('#confirmpassword');
 
     if (toggleConfirmPassword && confirmPassword) {
         toggleConfirmPassword.addEventListener('click', function () {

@@ -10,7 +10,7 @@
 <body>
     <div class="kotak_login">
         <div id="signIn">
-            <form action="php/login.php" method="post">
+            <form action="login.php" method="post">
                 <h1>Login</h1>
                 <div class="input-box">
                     <input type="text" id="username" name="username" placeholder="Username" required />
@@ -25,7 +25,7 @@
                 </div>
                 <button type="submit" id="loginButton" class="button">Login</button>
                 <div class="register">
-                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                    <p>Don't have an account? <a href="register2.php">Register</a></p>
                 </div>
             </form>
         </div>
