@@ -27,18 +27,13 @@
         </div>
 
         <div class="navbar-tambahan">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="login2.php" id="login"><i data-feather="log-in"></i></a>
             <a href="#" id="user"><i data-feather="user"></i></a>
-        </div>
-
-        <div class="search-box" id="search-box">
-            <input type="text" name="search" id="search-input" placeholder="cari..." />
         </div>
 
         <div class="user-info" id="user-info">
             <span id="username">Nama Pengguna</span>
-            <a href="#" id="logout">Logout</a>
+            <a href="logout.php" id="logout">Logout</a>
         </div>
     </div>
 

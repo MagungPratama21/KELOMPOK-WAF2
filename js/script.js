@@ -18,22 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     toggleLogin(isLoggedIn);
 
-    document.getElementById('login').addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const username = prompt('Masukkan nama pengguna:');
-        if (username) {
-            localStorage.setItem('isLoggedIn', 'true');
-            localStorage.setItem('username', username);
-            toggleLogin(true);
-        }
-    });
-
     document.getElementById('logout').addEventListener('click', (e) => {
         e.preventDefault();
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('username');
         toggleLogin(false);
+        window.location.href = 'logout2.php';
     });
 
     document.getElementById('user').addEventListener('click', (e) => {
