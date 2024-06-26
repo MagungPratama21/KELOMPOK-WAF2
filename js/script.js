@@ -1,34 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-    feather.replace();
+  feather.replace();
 
-    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const navbarNav = document.getElementById("navbarNav");
+  const menu = document.getElementById("menu");
 
-    const toggleLogin = (loggedIn) => {
-        if (loggedIn) {
-            document.getElementById('login').style.display = 'none';
-            document.getElementById('user').style.display = 'inline-block';
-            document.getElementById('user-info').style.display = 'inline-block';
-            document.getElementById('username').textContent = localStorage.getItem('username');
-        } else {
-            document.getElementById('login').style.display = 'inline-block';
-            document.getElementById('user').style.display = 'none';
-            document.getElementById('user-info').style.display = 'none';
-        }
-    };
+  menu.onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
 
-    toggleLogin(isLoggedIn);
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
 
-    document.getElementById('logout').addEventListener('click', (e) => {
-        e.preventDefault();
-        localStorage.removeItem('isLoggedIn');
-        localStorage.removeItem('username');
-        toggleLogin(false);
-        window.location.href = 'logout2.php';
+  const usernameElement = document.getElementById("username");
+  const userInfoElement = document.getElementById("user-info");
+
+  if (usernameElement) {
+    usernameElement.addEventListener("click", function () {
+      userInfoElement.style.display =
+        userInfoElement.style.display === "block" ? "none" : "block";
     });
-
-    document.getElementById('user').addEventListener('click', (e) => {
-        e.preventDefault();
-        const userInfo = document.getElementById('user-info');
-        userInfo.style.display = userInfo.style.display === 'block' ? 'none' : 'block';
-    });
+  }
 });
