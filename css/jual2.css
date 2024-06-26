@@ -234,10 +234,94 @@ section {
     transform: translateY(0);
   }
 }
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
+.content .box {
+  flex: 1 1 17rem;
+  position: relative;
+  height: 200px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.content .box img:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.content .box h2 {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 1.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--background-color);
+  padding: 8px;
+  border-radius: 0.5;
+}
+
+.content .box:hover h2 {
+  background: rgb(186, 8, 8);
+  color: white;
+}
+
+.tabel-section {
+  padding: 2rem 5%;
+}
+
+.tabel-container {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  background: #fff;
+  color: #000;
+}
+
+.responsive-table th {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+}
 /* Footer Styling */
 #footer {
-  background: #2c2c2c; /* Dark metallic background for footer */
+  background: gray; /* Dark metallic background for footer */
   color: #fff;
   padding: 3rem 0;
   font-family: Arial, sans-serif;
@@ -292,4 +376,33 @@ section {
 
 #footer .contact strong {
   font-size: 1.1rem;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #bbb;
+  flex-basis: 100%;
+}
+
+.credit span {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
 }

@@ -21,4 +21,20 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       searchBox.classList.toggle("active");
   });
+<<<<<<< HEAD
 });
+=======
+
+  const carousel = document.getElementById("carousel");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
+  nextBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: 400, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: -400, behavior: "smooth" });
+  });
+});
+>>>>>>> 10a43cf (update html to php and footer)
