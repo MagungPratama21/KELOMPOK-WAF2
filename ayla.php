@@ -96,13 +96,8 @@
         <a href="Mobil">Best Seller</a>
         <a href="spare-part">Spare Part</a>
         <a href="#bantuan">Bantuan</a>
-<<<<<<< HEAD:agya.html
-        <a href="#beli">Baru</a>
-        <a href="#jual">Bekas</a>
-=======
         <a href="belikendaraan.php">Baru</a>
         <a href="jualkendaraan.php">Bekas</a>
->>>>>>> 10a43cf (update html to php and footer):ayla.php
       </div>
       <div class="media">
         <div class="media">

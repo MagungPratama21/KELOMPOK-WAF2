@@ -28,7 +28,9 @@
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>BUGATTI VEYRON</h3>
             <p>Mobil Bugatti yang satu ini lebih murah lagi dibandingkan dengan Bugatti Divo, yaitu hanya seharga Rp 41,7 miliar. Mobil ini memiliki desain yang aerodinamis, sehingga mobil bisa dikendarai dengan lebih lincah.Mesin yang dipakai pada Bugatti Veyron masih sama dengan mesin di mobil Bugatti lainnya, yaitu W16 quad-turbocharger dengan kapasitas 8,0 liter. Beratnya juga cukup ringan, yaitu sekitar 1.888 kilogram. Dengan mesin yang ada, ditambah dengan bobot yang ringan dan desain yang mungil, Bugatti Veyron mampu mencapai kecepatan maksimal hingga 408 km/jam. </p>
             <p class="price">IDR 41.700.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>        
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

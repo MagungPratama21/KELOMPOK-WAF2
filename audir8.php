@@ -21,20 +21,16 @@
         <a href="#" class="navbar-logo">WAF21<span>GARAGE.com</span></a>
 
         <div class="navbar-nav">
-<<<<<<< HEAD:audir8.html
-            <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
-=======
             <a href="index.php">Home</a>
             <a href="belikendaraan.php">Beli Kendaraan</a>
             <a href="jualkendaraan.php">Jual Kendaraan</a>
->>>>>>> 10a43cf (update html to php and footer):audir8.php
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -53,7 +49,7 @@
             <h3>AUDI R8</h3>
             <p>Audi R8 2024 adalah 2 Seater Coupe yang tersedia dalam daftar harga Rp 7,5 Milyar di Indonesia. Ini tersedia dalam 7 warna, 2 varian, 1 pilihan mesin, dan 1 opsi transmisi: Otomatis di Indonesia. Dimensi R8 adalah 4426 mm L x 2037 mm W x 1240 mm H. Pesaing terdekat Audi R8 adalah Aventador, Huracan, Vanquish dan Continental.</p>
             <p class="price">IDR 7.500.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>        
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

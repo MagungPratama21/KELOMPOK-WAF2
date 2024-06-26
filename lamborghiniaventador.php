@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>LAMBORGHINI AVENTADOR</h3>
             <p>Lamborghini Aventador tersedia dalam pilihan mesin Bensin di Indonesia Coupe baru dari Lamborghini hadir dalam 4 varian. Bicara soal spesifikasi mesin Lamborghini Aventador, ini ditenagai dua pilihan mesin Bensin berkapasitas 6498 cc. Aventador tersedia dengan transmisi Otomatis tergantung variannya. Juga, tergantung pilihan dan jenis bahan bakar, konsumsi BBM Aventador mencapai 4.1 kmpl untuk perkotaan, 9.3 kmpl saat menjelajah perjalanan luar kota. Aventador adalah Coupe 2 seater dengan panjang 4780 mm, lebar 2265 mm, wheelbase 2700 mm.</p>
             <p class="price">IDR 8.700.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

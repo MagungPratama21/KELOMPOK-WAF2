@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>PAGANI ZONDA</h3>
             <p>Pagani Zonda adalah hypercar Italia yang sangat dihargai, dirancang oleh Horacio Pagani. Diluncurkan pada tahun 1999, Zonda telah mengalami berbagai iterasi dengan berbagai varian mesin dan trim. Mesin V12 dari Mercedes-AMG memberinya performa luar biasa, mencapai kecepatan maksimum lebih dari 350 km/jam. Desainnya yang menakjubkan, dibuat dengan serat karbon dan bahan-bahan ringan lainnya, memastikan kecepatan dan manuver yang luar biasa di jalan maupun lintasan.</p>
             <p class="price">IDR 271.900.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

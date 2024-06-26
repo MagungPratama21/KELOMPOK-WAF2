@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>FERARRI F8 TRIBUTO </h3>
             <p>Ferrari F8 Tributo 2024 adalah 2 seater Coupe. It is available in 1 variants, 1 engine, and 1 transmissions option: Otomatis in the Indonesia. Dimensi F8 Tributo adalah 4611 mm L x 1979 mm W x 1206 mm H. Pesaing terdekat Ferrari F8 Tributo adalah TT Coupe, TTS Coupe, R8 dan Aventador.</p>
             <p class="price">IDR 1.795.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>        
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

@@ -21,13 +21,15 @@
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="belikendaraan.html">Baru</a>
-        <a href="jualkendaraan.html">Bekas</a>
+        <a href="belikendaraan.html">Beli Kendaraan</a>
+        <a href="jualkendaraan.html">Jual Kendaraan</a>
         <a href="#bantuan">Bantuan</a>
       </div>
 
       <div class="navbar-tambahan">
-
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="login"><i data-feather="log-in"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
 
       <div class="search-box" id="search-box">
@@ -56,7 +58,7 @@
           tinggi untuk kenyamanan dan performa.
         </p>
         <p class="price">IDR 1.725.000.000</p>
-        <a href="BIODATA.html" class="buy-button">Buy</a>
+        <button class="buy-button">Buy</button>
       </div>
     </div>
 

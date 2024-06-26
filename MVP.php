@@ -20,15 +20,9 @@
     <div class="navbar">
       <a href="#" class="navbar-logo">WAF21<span>GARAGE.com</span></a>
       <div class="navbar-nav">
-<<<<<<< HEAD:MVP.html
-        <a href="#home">Home</a>
-        <a href="#beli">Baru</a>
-        <a href="#jual">Bekas</a>
-=======
         <a href="index.php">Home</a>
         <a href="belikendaraan.php">Baru</a>
         <a href="jualkendaraan.php">Bekas</a>
->>>>>>> 10a43cf (update html to php and footer):MVP.php
         <a href="#bantuan">Bantuan</a>
       </div>
       <div class="navbar-tambahan">

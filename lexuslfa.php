@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>LEXUS LFA</h3>
             <p>Lexus LFA adalah supercar mewah yang diproduksi oleh Lexus, merek premium dari Toyota. Ditenagai oleh mesin V10 4.8L yang menghasilkan 552 hp dan torsi 354 lb-ft, LFA mampu mencapai kecepatan maksimal 202 mph (325 km/jam) dan akselerasi 0-60 mph dalam 3,6 detik. Dikenal karena desain aerodinamisnya yang futuristik dan penggunaan material ringan seperti serat karbon, LFA menawarkan performa tinggi dan handling presisi. Interiornya mewah dengan bahan premium dan teknologi canggih, menjadikan LFA kombinasi sempurna antara kecepatan, kemewahan, dan inovasi. Produksi terbatas hanya 500 unit membuatnya sangat eksklusif.</p>
             <p class="price">IDR 5.625.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

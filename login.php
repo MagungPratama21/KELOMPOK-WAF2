@@ -1,46 +1,3 @@
-<<<<<<< HEAD
-<?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    $data = "register.txt";
-    $found = false;
-
-    $file = fopen($data, "r");
-
-    if ($file) {
-        while (($line = fgets($file)) !== false) {
-            list($saved_username, , $saved_password) = explode("|", $line);
-            $saved_username = trim($saved_username);
-            $saved_password = trim($saved_password);
-
-            if ($username === $saved_username && $password === $saved_password) {
-                $found = true;
-                break;
-            }
-        }
-        fclose($file);
-    }
-
-    if ($found) {
-        $_SESSION['username'] = $username;
-        $_SESSION['success'] = "Login successful. Welcome, $username!";
-        header("Location: index.php");
-        exit();
-    } else {
-        $_SESSION['error'] = "Invalid username or password.";
-        header("Location: login.html"); 
-        exit();
-    }
-} else {
-    header("Location: login.html"); 
-    exit();
-}
-?>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,4 +62,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="js/login.js"></script>
 </body>
 </html>
->>>>>>> 10a43cf (update html to php and footer)

@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>PORSCHE PANAMERA TURBO</h3>
             <p>Porsche Panamera 2024 adalah 4 seater Sedan. It is available in 5 variants, 3 engine, and 1 transmissions option: Otomatis in the Indonesia. Mobil ini memiliki ground clearance 133 mm dengan dimensi sebagai berikut: 5049 mm L x 2165 mm W x 1423 mm H. Pesaing terdekat Porsche Panamera adalah A7, Ghibli, M3 Sedan dan XF.</p>
             <p class="price">IDR 1.350.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>        
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     

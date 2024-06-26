@@ -16,19 +16,11 @@ body {
   --primary: rgb(225, 155, 4);
   --gray: #808080;
   --border-color: #a0522d;
-<<<<<<< HEAD
-  --background-color: white ;
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  color: #fff; 
-=======
   --background-color: white;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
   color: #fff;
->>>>>>> 10a43cf (update html to php and footer)
 }
 
 .navbar {

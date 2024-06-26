@@ -22,13 +22,15 @@
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
-            <a href="belikendaraan.html">Baru</a>
-            <a href="jualkendaraan.html">Bekas</a>
+            <a href="belikendaraan.html">Beli Kendaraan</a>
+            <a href="jualkendaraan.html">Jual Kendaraan</a>
             <a href="#bantuan">Bantuan</a>
         </div>
 
         <div class="navbar-tambahan">
-
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="login"><i data-feather="log-in"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
 
         <div class="search-box" id="search-box">
@@ -47,7 +49,7 @@
             <h3>HONDA CIVIC</h3>
             <p>Honda Civic Type R 2024 adalah 5 Seater Hatchback yang tersedia dengan harga Rp 1,399 Milyar di Indonesia. It is available in 1 variants, 1 engine, and 1 transmissions option: Manual in the Indonesia. Dimensi Civic Type R adalah 4557 mm L x 2076 mm W x 1421 mm H. Lebih dari 3 pengguna telah memberikan penilaian untuk Civic Type R berdasarkan fitur, jarak tempuh, kenyamanan tempat duduk dan kinerja mesin. Pesaing terdekat Honda Civic Type R adalah Clubman, Countryman, 3 Door dan A-Class. Cicilan bulanan terendah dimulai dari Rp 214,12 Juta (selama 60 bulan).</p>
             <p class="price">IDR 1.399.000.000</p>
-            <a href="BIODATA.html" class="buy-button">Buy</a>        
+            <button class="buy-button">Buy</button>
         </div>
     </div>
     
